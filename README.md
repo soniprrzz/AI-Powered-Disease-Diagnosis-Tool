@@ -31,3 +31,74 @@ Follow these steps to set up the project on your local machine.
    ```bash
    git clone https://github.com/soniprrzz/ai-powered-disease-diagnosis-tool.git
    cd ai-powered-disease-diagnosis-tool
+
+Create a virtual environment:
+
+bash
+Copy
+python -m venv venv
+Activate the virtual environment:
+
+On Windows:
+
+bash
+Copy
+.\venv\Scripts\activate
+On macOS/Linux:
+
+bash
+Copy
+source venv/bin/activate
+Install dependencies:
+
+bash
+Copy
+pip install -r requirements.txt
+Download the dataset:
+
+Download the Chest X-Ray Images (Pneumonia) dataset.
+
+Extract the dataset into the data folder. The folder structure should look like this:
+
+Copy
+data/
+  ├── train/
+  │   ├── NORMAL/
+  │   └── PNEUMONIA/
+  ├── test/
+  │   ├── NORMAL/
+  │   └── PNEUMONIA/
+  └── val/
+      ├── NORMAL/
+      └── PNEUMONIA/
+Train the model:
+
+bash
+Copy
+python model.py
+Run the Streamlit app:
+
+bash
+Copy
+streamlit run app.py
+Usage
+Open the Streamlit app in your browser.
+
+Upload a chest X-ray image (in JPG or PNG format).
+
+The app will display the prediction: "Normal" or "Pneumonia."
+
+Project Structure
+Copy
+AI-Powered Disease Diagnosis Tool/
+├── venv/                     # Virtual environment
+├── data/                     # Dataset folder
+│   ├── train/                # Training images
+│   ├── test/                 # Testing images
+│   └── val/                  # Validation images
+├── app.py                    # Streamlit app
+├── model.py                  # CNN model training script
+├── data_preprocessing.py     # Data preprocessing script
+├── pneumonia_cnn_model.h5    # Trained CNN model
+├── requirements.txt          # List of dependencies
+└── README.md                 # Project documentation
