@@ -3,6 +3,10 @@
 		{
 			"name": "AI-Powered Disease Diagnosis Tool",
 			"path": "."
+		},
+		{
+			"name": "AI-Powered-Disease-Diagnosis-Tool",
+			"path": "../../../AI-Powered-Disease-Diagnosis-Tool"
 		}
 	],
 	"settings": {}
