@@ -1,4 +1,5 @@
-# AI-Powered-Disease-Diagnosis-Tool
+# AI-Powered Disease Diagnosis Tool
+
 This project is an AI-powered tool for detecting diseases like **pneumonia** from chest X-ray images. It uses a Convolutional Neural Network (CNN) trained on a dataset of chest X-rays to classify images as either "Normal" or "Pneumonia."
 
 ## Features
@@ -32,64 +33,64 @@ Follow these steps to set up the project on your local machine.
    git clone https://github.com/soniprrzz/ai-powered-disease-diagnosis-tool.git
    cd ai-powered-disease-diagnosis-tool
 
-Create a virtual environment:
+2. **Create a virtual environment**:
+   ```bash
+   Copy
+   python -m venv venv
+   
+3. **Activate the virtual environment**:
 
-bash
-Copy
-python -m venv venv
-Activate the virtual environment:
+- **On Windows**:
 
-On Windows:
+   ```bash
+   .\venv\Scripts\activate
+   
+- **On macOS/Linux**:
 
-bash
-Copy
-.\venv\Scripts\activate
-On macOS/Linux:
+    ```bash
+    source venv/bin/activate
+    
+4. **Install dependencies**:
 
-bash
-Copy
-source venv/bin/activate
-Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   
+5. **Download the dataset**:
+   
+- **Download the Chest X-Ray Images (Pneumonia) dataset**.
 
-bash
-Copy
-pip install -r requirements.txt
-Download the dataset:
+- **Extract the dataset into the data folder. The folder structure should look like this**:
+   ```bash
+   data/
+     ├── train/
+     │   ├── NORMAL/
+     │   └── PNEUMONIA/
+     ├── test/
+     │   ├── NORMAL/
+     │   └── PNEUMONIA/
+     └── val/
+         ├── NORMAL/
+         └── PNEUMONIA/
+   
+6. **Train the model**:
 
-Download the Chest X-Ray Images (Pneumonia) dataset.
+   ```bash
+   python model.py
+  
+7. **Run the Streamlit app**:
 
-Extract the dataset into the data folder. The folder structure should look like this:
+   ```bash
+   streamlit run app.py
 
-Copy
-data/
-  ├── train/
-  │   ├── NORMAL/
-  │   └── PNEUMONIA/
-  ├── test/
-  │   ├── NORMAL/
-  │   └── PNEUMONIA/
-  └── val/
-      ├── NORMAL/
-      └── PNEUMONIA/
-Train the model:
+### Usage
+1. Open the Streamlit app in your browser.
 
-bash
-Copy
-python model.py
-Run the Streamlit app:
+2. Upload a chest X-ray image (in JPG or PNG format).
 
-bash
-Copy
-streamlit run app.py
-Usage
-Open the Streamlit app in your browser.
-
-Upload a chest X-ray image (in JPG or PNG format).
-
-The app will display the prediction: "Normal" or "Pneumonia."
+3. The app will display the prediction: "Normal" or "Pneumonia."
 
 Project Structure
-Copy
+   ```bash
 AI-Powered Disease Diagnosis Tool/
 ├── venv/                     # Virtual environment
 ├── data/                     # Dataset folder
