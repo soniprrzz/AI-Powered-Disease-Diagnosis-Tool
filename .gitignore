@@ -1,0 +1,9 @@
+# Ignore virtual environment
+venv/
+
+# Ignore large model files
+pneumonia_cnn_model.h5
+
+# Ignore other large files
+*.pyd
+*.dll
