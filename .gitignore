@@ -1,5 +1,6 @@
 # Ignore virtual environment
 venv/
+pyvenv.cfg
 
 # Ignore large model files
 pneumonia_cnn_model.h5
